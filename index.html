@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Hello! I'm John.</title>
   </head>
@@ -18,18 +18,78 @@
     <div class="jumbotron jumbotron-fluid">
     	<div class="container">
     		<div class="row" id="greetings">
-    			<div class="col text-center">
-    				<h3><em>Hi! My name is</em></h3>
-    				<h2>John Leo Claudio</h2>
+    			<div class="col-md-12 text-center" id="name">
+    				<p id="greet">Hi! My name is</h3>
+    				<p class="name" id="changeText">John</p>
     			</div>
+                <div class="col-md-12 col-lg-6 mx-auto d-block">
+                  <img src="img/file1.png" class="img-fluid ">
+                </div>
+            </div>  
     		</div>
     	</div>
     </div>
+    <div class="container">
+              <div class="row">
 
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="http://via.placeholder.com/350x250" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+          </div>
+        </div>  
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="http://via.placeholder.com/350x250" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">Lorem</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et</p>
+              </div>
+          </div>
+        </div>  
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="http://via.placeholder.com/350x250" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">Sit Amet</h3>
+                <p>Adipisicing elit, sed do eiusmod tempor incidior</p>
+              </div>
+          </div>
+        </div>  
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="http://via.placeholder.com/350x250" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, se</p>
+              </div>
+          </div>
+        </div>  
+
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var text = ["John", "Leo", "John Leo", "Cleo", "Claudio"];
+            var counter = 0;
+            var elem = document.getElementById("changeText");
+            setInterval(change, 1500);
+
+            function change() {
+              elem.innerHTML = text[counter];
+              counter++;
+              if (counter >= text.length) {
+                counter = 0;
+              }
+            }
+    </script>
   </body>
 </html>
