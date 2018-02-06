@@ -2,10 +2,8 @@
 	margin-top: 20px;
 }
 
-#greet	{
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 3em;
-	color: #fff;
+#greetings	{
+  margin-top: 200px;
 }
 .name {
 	font-family: 'Shadows Into Light', cursive;
@@ -13,9 +11,15 @@
 	color: #fff;
 }
 .jumbotron {
-    width: 100%;
-    background: #FE7575; 
-    padding: 0 0;
+    background: #fff; 
+}
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 70px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 
