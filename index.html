@@ -16,16 +16,21 @@
     <div class="jumbotron jumbotron-fluid">
     	<div class="container">
     		<div class="row">
-          <div class="col-md-6" >
+
+          <!-- Hero Image -->
+          <div class="col-xs-12 col-sm-12 col-md-7 my-auto">
+            <img src="img/circle-dp.png" class="img-fluid">
+          </div>
+
+          <!-- Hero Text -->
+          <div class="col-xs-12 col-sm-12 col-md-5 my-auto order-md-first">
             <div id="greetings">
               <h1>John Claudio</h1>
               <p class="lead">Hi! I'm John. I'm a junior web designer and a front-end developer.</p>
               <button type="button" class="btn btn-outline-primary">Contact Me</button>
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="img/circle-dp.png" class="img-fluid">
-          </div>
+
     		</div>
     	</div>
     </div>
@@ -34,19 +39,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        var text = ["John", "Leo", "John Leo", "Cleo", "Claudio"];
-            var counter = 0;
-            var elem = document.getElementById("changeText");
-            setInterval(change, 1500);
-
-            function change() {
-              elem.innerHTML = text[counter];
-              counter++;
-              if (counter >= text.length) {
-                counter = 0;
-              }
-            }
-    </script>
   </body>
 </html>
